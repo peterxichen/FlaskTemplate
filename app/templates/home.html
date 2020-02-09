@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block title %}
+Home Page
+{% endblock $}
+
+{% block body %}
+
+<div class="wrap">
+
+    <div id="title" class="titleText">
+        Title
+    </div>
+
+    <form class="search" autocomplete="off" spellcheck="false" method="POST">
+        <div class="searchBar" style="width:200px">
+            <input type="text" class="searchTerm" autofocus="autofocus" id="inputSearch" name="input" placeholder="placeholder">
+        </div>
+        <button type="submit" class="searchButton">
+            <i class"fa fa-search">
+            </i>
+        </button>
+    </form>
+</div>
+
+{% endblock %}
