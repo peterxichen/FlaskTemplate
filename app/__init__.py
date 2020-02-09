@@ -13,3 +13,6 @@ def home():
 def output(input_string=None):
     data = {'input_string': input_string}
     return render_template('output.html', data=data)
+
+if __name__ == '__main__':
+    app.run(debug=True, host='0.0.0.0', port=8080)
