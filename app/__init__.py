@@ -9,7 +9,7 @@ def home():
         return output(input_string)
     return render_template('home.html')
 
-@app.route9('/output')
+@app.route('/output')
 def output(input_string=None):
     data = {'input_string': input_string}
     return render_template('output.html', data=data)
